@@ -69,7 +69,7 @@ define(function(require){
 				name : {
 					type		: 'Text',
 					title		: localization.tt("lbl.groupName") +' *',
-					validators  : ['required',{type:'regexp',regexp:/^[a-zA-Z][a-zA-Z0-9_'&-]*[A-Za-z0-9]$/i,message :'Please enter valid name.'}],
+					validators  : ['required',{type:'regexp',regexp:/^[a-zA-Z][a-zA-Z0-9_'.&-]*[A-Za-z0-9]$/i,message :'Group name should start with alphabets & can have underscore, single quote, dot, ampersand, hyphen.'}],
 					editorAttrs 	:{ 'maxlength': 32},
 				},
 				description : {
